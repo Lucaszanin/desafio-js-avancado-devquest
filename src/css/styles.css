@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background-color: var(--primary-color);
+  font-family: "Kumbh Sans", sans-serif;  
+  text-align: center;    
+  padding-bottom: 10rem;
+}
+
+main {
+  display: flex;  
+  justify-content: center;
+  flex-direction: column;
+  padding: 5rem 0 0;      
+}
+
+.devicon-github-original{
+  font-size: 6rem;
+  margin-bottom: 3rem;
+  color: var(--secondary-color);
+}
+
+.section{
+  padding: 7rem 0;
+}
+
+.container {
+  width: 60%; /* se for uma tela menor que 980px vai se adaptar a 70% */
+  max-width: 96rem; /* quando chegar em 980px para de aumentar */
+  box-shadow: rgba(0, 0, 0, 0.3) 0rem 2.5rem 5rem -1.2rem;
+  background-color: var(--medium-secondary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 3rem;
+  padding: 3rem;
+  margin: 0 auto;
+}
+
+.container header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem 0;
+}
+
+.container header h2 {
+  color: var(--medium-color);
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+.container header #input-search {
+  width: 40rem;
+  font-size: 1.7rem;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: .7rem;
+  border: 1px solid var(--secondary-color);
+}
+
+.container header #btn-search {
+  width: 20rem;
+  font-size: 1.7rem;
+  margin: 2rem auto 0;
+  padding: 1rem;
+  border-radius: 7px;  
+  cursor: pointer;
+  color: #383B40;
+  font-weight: 700;
+  border: 1px solid var(--secondary-color);
+}
+
+.container header #btn-search:hover {
+  background-color: var(--primary-color);
+  color: var(--medium-secondary-color);
+  border-color: var(-primary-color-dark);
+}
+
+.container .profile-data{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: .5rem;  
+}
+
+.container .profile-data .info {
+  display: flex;  
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .profile-data .info .data{
+  padding: 5rem;
+  width: 50%;
+}
+
+.container .profile-data .info img{
+  width: 50%;
+  border-radius: 50%;
+  border: 15px solid var(--primary-color);
+  box-shadow: 10px 5px 30px var(--medium-color);
+}
+
+.container .profile-data .info h1{
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  color: var(--medium-color);
+  text-transform: uppercase;
+}
+
+.container .profile-data .info p{
+  color: var(--medium-color);
+  font-size: 2rem;  
+  font-weight: 400;
+  line-height: 2.3rem;
+  margin-bottom: 2rem;
+}
+
+.container .profile-data .fallowing {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.container .profile-data .fallowing .content-fallowing {
+  display: flex;
+  justify-content: center;
+  background-color: var(--primary-color);
+  color: var(--medium-secondary-color);
+  padding: 2rem;
+  border-radius: 50px;
+  width: 10rem;
+  text-align: center;
+  box-shadow: 10px 5px 30px #383B40;
+}
+
+.container .profile-data .fallowing h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+} 
+
+/* REPOSITORIES */
+
+.container .profile-data .repositories h2 ,
+.container .profile-data .activities h2{
+  margin-bottom: 3rem;
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: var(--medium-color);
+  text-align: center;
+}
+
+.container .profile-data .repositories ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 1.6rem;
+}
+
+.container .profile-data .repositories ul li a{
+  padding: 2rem;
+  border: 1px solid var(--secondary-color);  
+  margin: 2.5rem;
+  display: block;
+  border-radius: 7px;
+  transition: 0.3s ease-in-out;
+}
+
+.container .profile-data .repositories .content-repositories {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.container .profile-data .repositories .content-repositories >div {
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  padding: 1rem;
+  color: var(--medium-color);
+}
+
+
+.container .profile-data .repositories ul li a:hover{
+  background-color: var(--primary-color);
+  color: var(--medium-secondary-color);
+}
+
+.container .profile-data.hide{
+  display: none;
+}
+
+
+/* ACTIVITIES */
+
+.container .profile-data .activities {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.container .profile-data .activities h3 {
+  font-weight: 600;
+}
+
+.container .profile-data .activities ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+  gap: 1.5rem;
+}
+
+
+/* REPOSPONSIVE */
+@media (max-width: 1280px) {
+  .container {
+    flex-direction: column;
+    width: 90%;
+    border-radius: 20px;
+  }
+
+  .container header {
+    width: 100%;
+  }
+
+  .container header h1 {
+    font-size: 2.4rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .container header #input-search,
+  .container header #btn-search
+  {
+    width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  main {
+    padding: 15% 0;    
+  }
+
+  .container .profile-data .info img{
+    margin-bottom: 2rem;
+  }
+
+  .container .profile-data .info img,
+  .container .profile-data .info .data
+  {
+    width: 100%;
+    padding: 0;
+  }
+}
